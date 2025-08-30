@@ -77,6 +77,6 @@ This project demonstrates:
 - Data visualization (PCA, Volcano, Heatmap)
 - Clear scientific reporting  
 
-It serves as a **sample analysis report** for freelance bioinformatics or academic consulting.
+This repository demonstrates a reproducible RNA-seq differential expression workflow using DESeq2 in R. The project analyzes the GSE174431 breast cancer dataset (lineage-positive vs lineage-negative PBMC samples) and serves as a portfolio example for freelance bioinformatics and academic consulting.
 
 ---
