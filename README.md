@@ -28,15 +28,15 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ### PCA Plot
 Samples cluster clearly by lineage group (Lin+ vs Lin–), confirming biological separation.  
-![PCA Plot](Rplot05.png)
+![PCA Plot](Rplot03.png)
 
 ### Volcano Plot
 Differentially expressed genes between **Lin+** and **Lin–**.  
-![Volcano Plot](Rplot04.png)
+![Volcano Plot](Rplot02.png)
 
 ### Heatmap of Top 20 DEGs
 The top 20 genes show distinct expression patterns between groups.  
-![Heatmap](Rplot03.png)
+![Heatmap](Rplot01.png)
 
 ### Top 20 DE Genes (Table)
 | Gene | log2FC | Adj.P.Val |
