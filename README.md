@@ -1,6 +1,6 @@
 # Differential Expression Analysis of Breast Cancer PBMCs (GSE174431)
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates a **bioinformatics pipeline** for analyzing RNA-seq data using **R and DESeq2**.  
 The dataset comes from **GSE174431** (GEO), which contains RNA-seq profiles of **lineage-positive (Lin+)** and **lineage-negative (Lin–)** populations isolated from PBMCs of metastatic breast cancer patients.  
 
@@ -8,7 +8,7 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ---
 
-## 🔬 Methods
+##  Methods
 1. Downloaded raw exon count files from **GEO** (`GSE174431_RAW.tar`).  
 2. Processed and merged count files into a matrix in **R**.  
 3. Annotated samples using metadata (`LinPositive vs LinNegative`).  
@@ -24,7 +24,7 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ---
 
-## 📊 Results
+##  Results
 
 ### PCA Plot
 Samples cluster clearly by lineage group (Lin+ vs Lin–), confirming biological separation.  
@@ -47,21 +47,21 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 - **Lin– cells** (lineage-negative) display expression consistent with **stem-like / progenitor states**.  
 - **Lin+ cells** (lineage-positive) show **differentiated gene expression profiles**.  
 - Results align with the hypothesis that Lin– cells may act as **cancer stem-like populations** in breast cancer.  
 
 ---
 
-## 🛠 Tools & Packages
+##  Tools & Packages
 - **R / Bioconductor**  
   - `DESeq2`, `GEOquery`, `pheatmap`, `ggplot2`  
 - **Data Source:** GEO (GSE174431)  
 
 ---
 
-## 📂 Files in Repository
+##  Files in Repository
 - `results.csv` → full DESeq2 results  
 - `Rplot01.png` → Heatmap of top 20 DEGs  
 - `Rplot02.png` → Volcano plot  
@@ -70,7 +70,7 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
-## ✨ Portfolio Value
+##  Portfolio Value
 This project demonstrates:
 - RNA-seq preprocessing
 - DESeq2 workflow
