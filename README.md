@@ -1,6 +1,10 @@
 # Differential Expression Analysis of Breast Cancer PBMCs (GSE174431)
 
+<<<<<<< HEAD
 ## Project Overview
+=======
+##  Project Overview
+>>>>>>> 2fb51c0 (Local edits before rebase)
 This project demonstrates a **bioinformatics pipeline** for analyzing RNA-seq data using **R and DESeq2**.  
 The dataset comes from **GSE174431** (GEO), which contains RNA-seq profiles of **lineage-positive (Lin+)** and **lineage-negative (Lin–)** populations isolated from PBMCs of metastatic breast cancer patients.  
 
@@ -47,7 +51,11 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
+<<<<<<< HEAD
 ##  Conclusion
+=======
+## Conclusion
+>>>>>>> 2fb51c0 (Local edits before rebase)
 - **Lin– cells** (lineage-negative) display expression consistent with **stem-like / progenitor states**.  
 - **Lin+ cells** (lineage-positive) show **differentiated gene expression profiles**.  
 - Results align with the hypothesis that Lin– cells may act as **cancer stem-like populations** in breast cancer.  
