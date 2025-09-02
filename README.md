@@ -1,6 +1,6 @@
 # Differential Expression Analysis of Breast Cancer PBMCs (GSE174431)
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates a **bioinformatics pipeline** for analyzing RNA-seq data using **R and DESeq2**.  
 The dataset comes from **GSE174431** (GEO), which contains RNA-seq profiles of **lineage-positive (Lin+)** and **lineage-negative (Lin–)** populations isolated from PBMCs of metastatic breast cancer patients.  
 
@@ -8,7 +8,7 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ---
 
-## 🔬 Methods
+##  Methods
 1. Downloaded raw exon count files from **GEO** (`GSE174431_RAW.tar`).  
 2. Processed and merged count files into a matrix in **R**.  
 3. Annotated samples using metadata (`LinPositive vs LinNegative`).  
@@ -24,7 +24,7 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ---
 
-## 📊 Results
+##  Results
 
 ### PCA Plot
 Samples cluster clearly by lineage group (Lin+ vs Lin–), confirming biological separation.  
@@ -47,14 +47,14 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 - **Lin– cells** (lineage-negative) display expression consistent with **stem-like / progenitor states**.  
 - **Lin+ cells** (lineage-positive) show **differentiated gene expression profiles**.  
 - Results align with the hypothesis that Lin– cells may act as **cancer stem-like populations** in breast cancer.  
 
 ---
 
-## 🛠 Tools & Packages
+##  Tools & Packages
 - **R / Bioconductor**  
   - `DESeq2`, `GEOquery`, `pheatmap`, `ggplot2`  
 - **Data Source:** GEO (GSE174431)  
@@ -77,6 +77,6 @@ This project demonstrates:
 - Data visualization (PCA, Volcano, Heatmap)
 - Clear scientific reporting  
 
-It serves as a **sample analysis report** for freelance bioinformatics or academic consulting.
+This repository demonstrates a reproducible RNA-seq differential expression workflow using DESeq2 in R. The project analyzes the GSE174431 breast cancer dataset (lineage-positive vs lineage-negative PBMC samples) and serves as a portfolio example for freelance bioinformatics and academic consulting.
 
 ---
