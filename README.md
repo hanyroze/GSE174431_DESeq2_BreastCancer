@@ -1,6 +1,14 @@
 # Differential Expression Analysis of Breast Cancer PBMCs (GSE174431)
 
+<<<<<<< HEAD
 ##  Project Overview
+=======
+<<<<<<< HEAD
+## Project Overview
+=======
+##  Project Overview
+>>>>>>> 2fb51c0 (Local edits before rebase)
+>>>>>>> 0197b19
 This project demonstrates a **bioinformatics pipeline** for analyzing RNA-seq data using **R and DESeq2**.  
 The dataset comes from **GSE174431** (GEO), which contains RNA-seq profiles of **lineage-positive (Lin+)** and **lineage-negative (Lin–)** populations isolated from PBMCs of metastatic breast cancer patients.  
 
@@ -28,15 +36,15 @@ The objective was to identify **differentially expressed genes (DEGs)** and visu
 
 ### PCA Plot
 Samples cluster clearly by lineage group (Lin+ vs Lin–), confirming biological separation.  
-![PCA Plot](Rplot05.png)
+![PCA Plot](Rplot03.png)
 
 ### Volcano Plot
 Differentially expressed genes between **Lin+** and **Lin–**.  
-![Volcano Plot](Rplot04.png)
+![Volcano Plot](Rplot02.png)
 
 ### Heatmap of Top 20 DEGs
 The top 20 genes show distinct expression patterns between groups.  
-![Heatmap](Rplot03.png)
+![Heatmap](Rplot01.png)
 
 ### Top 20 DE Genes (Table)
 | Gene | log2FC | Adj.P.Val |
@@ -47,7 +55,15 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
+<<<<<<< HEAD
 ## Conclusion
+=======
+<<<<<<< HEAD
+##  Conclusion
+=======
+## Conclusion
+>>>>>>> 2fb51c0 (Local edits before rebase)
+>>>>>>> 0197b19
 - **Lin– cells** (lineage-negative) display expression consistent with **stem-like / progenitor states**.  
 - **Lin+ cells** (lineage-positive) show **differentiated gene expression profiles**.  
 - Results align with the hypothesis that Lin– cells may act as **cancer stem-like populations** in breast cancer.  
@@ -61,7 +77,7 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
-## 📂 Files in Repository
+##  Files in Repository
 - `results.csv` → full DESeq2 results  
 - `Rplot01.png` → Heatmap of top 20 DEGs  
 - `Rplot02.png` → Volcano plot  
@@ -70,7 +86,7 @@ The top 20 genes show distinct expression patterns between groups.
 
 ---
 
-## ✨ Portfolio Value
+##  Portfolio Value
 This project demonstrates:
 - RNA-seq preprocessing
 - DESeq2 workflow

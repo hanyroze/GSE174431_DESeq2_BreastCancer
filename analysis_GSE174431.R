@@ -1,6 +1,4 @@
-#if(!requireNamespace("BiocManager", quietly=TRUE))
-      #install.packages("BiocManager")
-      #BiocManager::install(c("GEOquery", "DESeq2", "pheatmap"))
+
 if(!requireNamespace("BiocManager", quietly=TRUE))
   install.packages("BiocManager")
 
@@ -28,11 +26,11 @@ dim(exprSet)
 head(pheno[,1:10])
 
 getGEOSuppFiles("GSE174431")
-# Point to your RAW folder
+
 path <- "/Users/haniehroodashty/GSE174431/GSE174431_RAW"
-# List all counts files (with or without .gz)
+
 files <- list.files(path, pattern = "counts", full.names = TRUE)
-files
+
 
 library(dplyr)
 
@@ -69,22 +67,14 @@ counts$gene <- sub("_exon.*", "", rownames(counts))  # strip exon info
 counts_gene <- counts %>% 
   group_by(gene) %>% 
   summarise(across(everything(), sum))
-#Now you have a gene-level count matrix, ready for DESeq2.
 
-#Get phenotype info (conditions, labels, etc.):
-# See available columns
-colnames(pheno)
-# Make sure rownames of pheno = sample IDs
-rownames(pheno) <- pheno$geo_accession
 
 # Keep only samples present in counts
 pheno <- pheno[colnames(counts), ]
 
-colnames(pheno)   # to see possible columns like "title", "source_name_ch1", etc.
-head(pheno$title) # many studies store condition here
 
 #Create a clean group column
-#This will give you the counts of samples in each group
+
 pheno$group <- ifelse(grepl("Lin\\+", pheno$title), "LinPositive", "LinNegative")
 table(pheno$group)
 
@@ -100,9 +90,9 @@ counts_gene <- as.data.frame(counts_gene)
 rownames(counts_gene) <- counts_gene$gene
 counts_gene$gene <- NULL   # drop the "gene" column
 
-# Make sure it's numeric
+
 counts_gene <- as.matrix(counts_gene)
-#Now you have a matrix with genes as rownames and GSM IDs as column names.
+
 
 pheno <- pheno[colnames(counts_gene), ]
 pheno$group <- factor(pheno$group)
